@@ -1,5 +1,5 @@
 // Declarando as bibliotecas que vamos utilizar
-const Insta = require('@androz2091/insta.js');
+const Insta = require('./insta.js');
 const moment = require('moment');
 const client = new Insta.Client();
 
