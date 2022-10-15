@@ -5,6 +5,6 @@ do
 echo "$ {
 	GREEN
 } iniciando..."
-npm start
+node bio.js
 sleep 1
 done
