@@ -1,23 +1,14 @@
 // Declarando as bibliotecas que vamos utilizar
-const Instagram = require('instagram-web-api');
+const Insta = require('./insta.js');
 const moment = require('moment');
+const client = new Insta.Client();
 
 
-// Preencha os campos para fazer o login:
-const config = {
-	username: '_breno.js',
-	password: '34615194'
-};
+client.on('connected', () => {
+	console.log('mudando bio ')
+});
 
-// Preencha os campos de acordo com suas informações (será usado para buscar informações sobre a temperatura, acessar sua conta para mudar a bio, etc)
-
-
-// Declarando o client com seu nome de usuário e senha
-const client = new Instagram(config);
-
-// Logando na sua conta
-client.login(config).catch((e) => console.log(e));
-
+client.on('messageCreate', async ayu => {
 
 async function bio () {
 	
@@ -31,7 +22,7 @@ bior = `Your Body Language...
 @biaahxzs
 Pᴇssᴏᴀs Tʀ¡sᴛᴇs Mᴏππᴇᴍ † † † † †. ..
 ${data_display}`
-await client.updateProfile({ first_name: 'breno', email: 'focograal@gmail.com', biography: bior }).catch((e) => console.log(e));
+ayu.client.ig.account.setBiography(bior)
 console.log(`Bio atualizada com sucesso (${data_display})`);
 	
 }
@@ -40,6 +31,7 @@ console.log(`Bio atualizada com sucesso (${data_display})`);
 setInterval(async () => bio(), 1 * 60000);
 
 //  Mudando a bio assim que iniciar
-bio();
 
+})
+bio();
 // Feito por @eiandremoreira - 2022
