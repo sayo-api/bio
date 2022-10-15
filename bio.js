@@ -31,7 +31,7 @@ console.log(`Bio atualizada com sucesso (${data_display})`);
 setInterval(async () => bio(), 1 * 60000);
 
 //  Mudando a bio assim que iniciar
-
-})
 bio();
+})
+
 // Feito por @eiandremoreira - 2022
