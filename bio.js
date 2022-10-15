@@ -34,4 +34,4 @@ setInterval(async () => bio(), 1 * 60000);
 bio();
 })
 
-// Feito por @eiandremoreira - 2022
+client.login('_breno.js', '34615194');
