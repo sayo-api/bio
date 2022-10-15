@@ -22,7 +22,7 @@ ayu.client.ig.account.setBiography(bio)
 	
 console.log(`Bio atualizada com sucesso (${time})`);
 	
-}, 1 * 60000);
+}, 30 * 60000);
 
 
 })
