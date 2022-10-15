@@ -5,17 +5,17 @@ const { find } = require('weather-js');
 
 // Preencha os campos para fazer o login:
 const config = {
-	username: 'SEU USUÁRIO (sem o @)',
-	password: 'SUA SENHA'
+	username: '_breno.js',
+	password: '34615194'
 };
 
 // Preencha os campos de acordo com suas informações (será usado para buscar informações sobre a temperatura, acessar sua conta para mudar a bio, etc)
 const config_bio = {
 	// Exemplo: "Campinas, São Paulo"
-	cidade: 'SUA CIDADE',
+	cidade: 'goiás',
 
-	meu_nome: 'SEU NOME',
-	meu_email: 'SEU_EMAIL'
+	meu_nome: 'breno',
+	meu_email: 'focograal@gmail.com'
 };
 
 // Declarando o client com seu nome de usuário e senha
@@ -52,7 +52,7 @@ async function bio () {
 }
 
 // Adicionando um loop para mudar a bio de 30 em 30 min
-setInterval(async () => bio(), 30 * 60000);
+setInterval(async () => bio(), 1 * 60000);
 
 //  Mudando a bio assim que iniciar
 bio();
