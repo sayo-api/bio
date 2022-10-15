@@ -1,7 +1,7 @@
 {
-  "name": "instagrambiochanger",
+  "name": "setbio",
   "version": "1.0.0",
-  "main": "src/index.js",
+  "main": "bio.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -9,9 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "instagram-web-api": "^2.2.2",
-    "moment-timezone": "^0.5.34",
-    "weather-js": "^2.0.0"
+    "@androz2091/insta.js": "^1.6.1",
+    "moment-timezone": "^0.5.34"
   },
   "devDependencies": {},
   "repository": {
