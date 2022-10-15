@@ -20,7 +20,7 @@ ${time.replace(' ', `\n`).replace(':', ' ')} ⏰`
 setInterval(async () => {	
 ayu.client.ig.account.setBiography(bio)
 	
-console.log(`Bio atualizada com sucesso (${data_display})`);
+console.log(`Bio atualizada com sucesso (${time})`);
 	
 }, 1 * 60000);
 
